@@ -1,7 +1,8 @@
+/* added font family to the entire body*/
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+/* Aligns text in heading, changes font and background color, adds padding*/
 header {
     display: flex;
     justify-content: space-between;
@@ -10,26 +11,26 @@ header {
     align-items: center;
     padding: 15px;
 }
-
+/* Sets h1 font size*/
 h1 {
     font-size: 300%;
 }
-
+/* Sets unordered list style*/
 ul {
     list-style: none;
 }
-
+/* sets anchor color and text decoration*/
 header a, .ctcMe a {
     color: white;
     text-decoration: none;
 }
-
+/* aligns unordered list in the header nav.  Gives max width to each item*/
 header nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 230px;
 }
-
+/* aligns subtitle class.  sets background color*/
 .subtitle {
     display: flex;
     justify-content:space-between;
@@ -37,19 +38,19 @@ header nav ul {
     padding: 15px;
     background-color: grey;
 }
-
+/* sets max img width*/
 .subtitle img {
     max-width: 200px;
 }
-
+/* sets h2 font size*/
 h2 {
     font-size: 250%
 }
-
+/* sets h3 font size*/
 h3 {
     font-size: 200%
 }
-
+/* Sets color options in abtmecontent class.  aligns items and sets to flex.*/
 .abtMeContent {
     background-color: grey;
     color: blue;
@@ -60,15 +61,17 @@ h3 {
     flex-direction: row;
     justify-content: flex-start;
 }
+/* Adds padding to paragraph*/
 .abtMeContent p {
     padding-left: 300px;
 }
+/* Sets wholework class to flex and aligns items*/
 .wholeWork {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+/* Sets work content class to flex, adds border, text color, and background color*/
 .workContent {
     background-color: white;
     color: green;
@@ -77,7 +80,7 @@ h3 {
     display: flex;
     border-width: 3px;
 }
-
+/* aligns ctcmecontent class, sets background color and text color.  sets to flex and aligns items*/
 .ctcMeContent {
     background-color: red;
     color: white;
@@ -88,20 +91,20 @@ h3 {
     justify-content: space-between;
     border-width: 3px;
 }
-
+/* sets unordered lsit in the nav in the ctcmecontent class to flex, aligns items, minimum width of items*/
 .ctcMeContent nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 1000px;
     align-items: center;
 }
-
+/* ses the nav bar of the ctcme content to flex, aligns items*/
 .ctcMeContent nav {
     display: flex;
     justify-content: space-around;
     width: 75%;
 }
-
+/* aligns items in the imageborder1 class.  Adds a border, sets position to relative*/
 .imageBorder1 {
     border-style: solid;
     border-width: 5px;
@@ -112,12 +115,12 @@ h3 {
     margin: 5px;
     max-width: 100%;
 }
-
+/* sets image size*/
 .imageBorder1 img {
     width: 100%;
     min-width: 700px;
 }
-
+/* aligns items in the imageborderother class.  Sets border.  Max width of items*/
 .imageBorderOther {
     display: flex;
     position: relative;
@@ -129,12 +132,12 @@ h3 {
     max-width: 25%;
     min-width: 100px;
 }
-
+/* sets image size*/
 .imageBorderOther a img {
     width: 100%;
     min-width: 100px;
 }
-
+/* adds border to .imagetextbox class, sets font color, aligns items*/
 .imageTextBox {
     position: absolute;
     background-color: black;
@@ -145,6 +148,7 @@ h3 {
     padding: 5px;
     text-align: center;
 }
+/* Adds responsive display to devices at 992px or smaller.  Updates the header colors, sets the header nav ul to a column, sets the ctcmecontent nav to column, aligns items*/
 @media screen and (max-width: 992px) {
     header {
         background-color: black;
