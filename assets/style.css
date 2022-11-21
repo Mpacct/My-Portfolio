@@ -66,18 +66,16 @@ h3 {
     padding-left: 300px;
 }
 /* Sets wholework class to flex and aligns items*/
-.wholeWork {
+/*.wholeWork {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 /* Sets work content class to flex, adds border, text color, and background color*/
-.workContent {
+/*.workContent {
     background-color: white;
     color: green;
     border-style: solid;
     border-color: white;
-    display: flex;
     border-width: 3px;
 }
 /* aligns ctcmecontent class, sets background color and text color.  sets to flex and aligns items*/
@@ -105,7 +103,7 @@ h3 {
     width: 75%;
 }
 /* aligns items in the imageborder1 class.  Adds a border, sets position to relative*/
-.imageBorder1 {
+/* .imageBorder1 {
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -116,12 +114,12 @@ h3 {
     max-width: 100%;
 }
 /* sets image size*/
-.imageBorder1 img {
+/*.imageBorder1 img {
     width: 100%;
     min-width: 700px;
 }
 /* aligns items in the imageborderother class.  Sets border.  Max width of items*/
-.imageBorderOther {
+/*.imageBorderOther {
     display: flex;
     position: relative;
     justify-content: center;
@@ -133,12 +131,12 @@ h3 {
     min-width: 100px;
 }
 /* sets image size*/
-.imageBorderOther a img {
+/*.imageBorderOther a img {
     width: 100%;
     min-width: 100px;
 }
 /* adds border to .imagetextbox class, sets font color, aligns items*/
-.imageTextBox {
+/*.imageTextBox {
     position: absolute;
     background-color: black;
     color: white;
@@ -147,6 +145,38 @@ h3 {
     border-color: black;
     padding: 5px;
     text-align: center;
+}
+*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+main > section {
+    flex: 1 0 50%;
+    text-align: center;
+    padding: 10px
+}
+
+main > section:first-child {
+    
+    flex: 0 1 100%
+}
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.card img {
+    width: 10%;
+    min-width: 400px;
+}
+#image1 {
+    
 }
 /* Adds responsive display to devices at 992px or smaller.  Updates the header colors, sets the header nav ul to a column, sets the ctcmecontent nav to column, aligns items*/
 @media screen and (max-width: 992px) {
