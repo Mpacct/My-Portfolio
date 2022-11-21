@@ -20,12 +20,12 @@ ul {
     list-style: none;
 }
 /* sets anchor color and text decoration*/
-header a, .ctcMe a {
+header a, footer a {
     color: white;
     text-decoration: none;
 }
 /* aligns unordered list in the header nav.  Gives max width to each item*/
-header nav ul {
+header nav ul, footer nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 230px;
@@ -38,6 +38,10 @@ header nav ul {
     padding: 15px;
     background-color: grey;
 }
+
+section {
+    background-color: grey;
+}
 /* sets max img width*/
 .subtitle img {
     max-width: 200px;
@@ -48,110 +52,38 @@ h2 {
 }
 /* sets h3 font size*/
 h3 {
-    font-size: 200%
+    font-size: 250%;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: hsla(233, 79%, 11%, 0.836);
+    color: white;
+}
+
+h4 {
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 10px;
 }
 /* Sets color options in abtmecontent class.  aligns items and sets to flex.*/
 .abtMeContent {
     background-color: grey;
-    color: blue;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    color: black;
 }
-/* Adds padding to paragraph*/
-.abtMeContent p {
-    padding-left: 300px;
-}
-/* Sets wholework class to flex and aligns items*/
-/*.wholeWork {
-    display: flex;
-    flex-wrap: wrap;
-}
-/* Sets work content class to flex, adds border, text color, and background color*/
-/*.workContent {
-    background-color: white;
-    color: green;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
-}
-/* aligns ctcmecontent class, sets background color and text color.  sets to flex and aligns items*/
-.ctcMeContent {
-    background-color: red;
-    color: white;
-    border-style: solid;
-    border-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-width: 3px;
-}
-/* sets unordered lsit in the nav in the ctcmecontent class to flex, aligns items, minimum width of items*/
-.ctcMeContent nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 1000px;
-    align-items: center;
-}
-/* ses the nav bar of the ctcme content to flex, aligns items*/
-.ctcMeContent nav {
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
-}
-/* aligns items in the imageborder1 class.  Adds a border, sets position to relative*/
-/* .imageBorder1 {
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
+main header {
+    background-color: grey;
     display: flex;
     justify-content: center;
-    position: relative;
-    margin: 5px;
-    max-width: 100%;
+    color:  hsla(233, 79%, 11%, 0.836);;
 }
-/* sets image size*/
-/*.imageBorder1 img {
-    width: 100%;
-    min-width: 700px;
-}
-/* aligns items in the imageborderother class.  Sets border.  Max width of items*/
-/*.imageBorderOther {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    margin: 5px;
-    max-width: 25%;
-    min-width: 100px;
-}
-/* sets image size*/
-/*.imageBorderOther a img {
-    width: 100%;
-    min-width: 100px;
-}
-/* adds border to .imagetextbox class, sets font color, aligns items*/
-/*.imageTextBox {
-    position: absolute;
-    background-color: black;
-    color: white;
-    border-style: solid;
-    border-width: 0px 2px 2px 2px;
-    border-color: black;
-    padding: 5px;
-    text-align: center;
-}
-*/
+
 main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
+    max-width: 75%;
+    margin: auto;
 }
+
 main > section {
     flex: 1 0 50%;
     text-align: center;
@@ -162,21 +94,34 @@ main > section:first-child {
     
     flex: 0 1 100%
 }
+
 .card {
     flex: 1 0 0;
     padding: 10px;
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: white;
+    background-color: hsla(233, 79%, 11%, 0.836);
 }
 
 .card img {
     width: 10%;
     min-width: 400px;
 }
-#image1 {
-    
+
+footer {
+    padding-top: 10px;
+    background-color: hsla(233, 79%, 11%, 0.836);
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+footer nav {
+    width: 70%;
+    margin: auto;
 }
 /* Adds responsive display to devices at 992px or smaller.  Updates the header colors, sets the header nav ul to a column, sets the ctcmecontent nav to column, aligns items*/
 @media screen and (max-width: 992px) {
