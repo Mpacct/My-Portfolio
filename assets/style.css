@@ -1,22 +1,13 @@
-* {
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-img {
-    max-width: 50px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     background-color: hsla(233, 79%, 11%, 0.836);
     color: white;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 15px;
-}
-
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
@@ -27,7 +18,7 @@ ul {
     list-style: none;
 }
 
-a {
+header a, .ctcMe a {
     color: white;
     text-decoration: none;
 }
@@ -37,6 +28,7 @@ header nav ul {
     justify-content: space-between;
     min-width: 230px;
 }
+
 .subtitle {
     display: flex;
     justify-content:space-between;
@@ -46,24 +38,54 @@ header nav ul {
 }
 
 .subtitle img {
-    display: block;
     max-width: 200px;
 }
 
 h2 {
     font-size: 250%
 }
-
-section {
+h3 {
+    font-size: 200%
+}
+.abtMeContent {
+    background-color: purple;
+    color: green;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+.workContent {
+    background-color: black;
+    color: green;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-width: 3px;
+    padding-right: 1500px;
+}
+.ctcMeContent {
+    background-color: red;
+    color: green;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-width: 3px;
+}
+.ctcMeContent nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
     align-items: center;
-    position: relative;
 }
-
-h3 {
-    font-size: 150%;
-}
-
-section img {
+.ctcMeContent nav {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
 }
