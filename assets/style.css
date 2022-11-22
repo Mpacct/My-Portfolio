@@ -6,7 +6,7 @@ body {
 :root {
     --color-blue: hsla(233, 79%, 11%, 0.836);
 }
-
+/* sets header element to display: flex, aligns content, sets background and font color*/
 header {
     display: flex;
     justify-content: space-between;
@@ -34,6 +34,7 @@ header nav ul, footer nav ul {
     justify-content: space-between;
     min-width: 230px;
 }
+
 /* aligns subtitle class.  sets background color*/
 .subtitle {
     display: flex;
@@ -42,7 +43,7 @@ header nav ul, footer nav ul {
     padding: 15px;
     background-color: grey;
 }
-
+/* sets background color*/
 section {
     background-color: grey;
 }
@@ -54,7 +55,7 @@ section {
 h2 {
     font-size: 250%
 }
-/* sets h3 font size*/
+/* sets h3 font size, sets background-color, font color, and border styles*/
 h3 {
     font-size: 250%;
     text-align: center;
@@ -65,7 +66,7 @@ h3 {
     border-color: white;
     border-width: 2px;
 }
-
+/*sets font size and aligns h4s*/
 h4 {
     font-size: 200%;
     text-align: center;
@@ -77,6 +78,7 @@ h4 {
     color: black;
     line-height: 1.5;
 }
+/* sets header within main background color and as flexible*/
 main header {
     background-color: grey;
     display: flex;
@@ -84,6 +86,7 @@ main header {
     color:  var(--color-blue);
 }
 
+/* Specific styling for Div and Main etc. and other elements*/
 main {
     display: flex;
     flex-wrap: wrap;
@@ -92,16 +95,17 @@ main {
     margin: auto;
 }
 
+/* sets sections that are children of main to take 50% of the element space*/
 main > section {
     flex: 1 0 50%;
     text-align: center;
     padding: 10px
 }
-
+/* sets the first child of the main element to take 100% of the element space*/
 main > section:first-child {
     flex: 0 1 100%
 }
-
+/* sets size properties to .card class, algins text, and adds border and background color*/
 .card {
     flex: 1 0 0;
     padding: 10px;
@@ -111,17 +115,17 @@ main > section:first-child {
     border-color: white;
     background-color: var(--color-blue);
 }
-
+/* sets images in card class size*/
 .card img {
     width: 10%;
     min-width: 400px;
 }
-
+/* sets images in image1 id size*/
 #image1 img {
     width: 40%;
     min-width: 400px;
 }
-
+/* sets footer alignment, background color, and border*/
 footer {
     padding-top: 10px;
     background-color: var(--color-blue);
@@ -130,7 +134,7 @@ footer {
     border-width: 2px;
     border-color: white;
 }
-
+/* aligns nav bar in footer; sets min. width*/
 footer nav {
     width: 70%;
     margin: auto;
