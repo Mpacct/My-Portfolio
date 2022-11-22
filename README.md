@@ -12,7 +12,7 @@ https://github.com/nickrosales/Portfolio
 
 ## Screenshot
 
-![screenshot of completed page](./assets/images/Screenshot.png)
+![screenshot of completed page](./assets/images/Screenshot1.png)
 
 ## License
 
